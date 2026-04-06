@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
+._*
+
+# VS Code
+.vscode/
+
+# Large dataset (not included in repo)
+data/ct_liver/raw/

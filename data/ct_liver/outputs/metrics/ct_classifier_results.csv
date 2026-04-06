@@ -1,0 +1,5 @@
+Metric,Value
+Validation Accuracy,0.8170434832572937
+Test Accuracy,0.8229565024375916
+Balanced Accuracy,0.8037225138346774
+Macro F1,0.8081780920013721
