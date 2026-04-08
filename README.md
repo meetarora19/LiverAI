@@ -1,4 +1,4 @@
-# LiverAI CT Pipeline — v1.0
+# LiverAI CT Pipeline — v1.1
 
 This project implements a CT-based liver analysis pipeline using the Task03_Liver dataset from the Medical Segmentation Decathlon.
 
@@ -9,11 +9,13 @@ This project implements a CT-based liver analysis pipeline using the Task03_Live
 - Train / validation / test split generation
 - CNN-based classifier (MobileNetV2)
 - Saved training plots and evaluation metrics
+- Single-slice CT prediction utility
+- Basic morphology analysis using liver and tumor masks
 
 ## Project Structure
-src/ct_pipeline/ → core scripts  
-data/ct_liver/processed/ → generated slices and splits  
-data/ct_liver/outputs/ → metrics and visualizations  
+src/ct_pipeline/ → core CT pipeline scripts  
+data/ct_liver/processed/ → generated slices and masks  
+data/ct_liver/outputs/ → metrics, predictions, and visualizations  
 models/ct_model/ → trained classifier  
 
 ## Dataset
@@ -48,13 +50,30 @@ python src/ct_pipeline/create_splits.py
 python src/ct_pipeline/check_splits.py  
 python src/ct_pipeline/train_classifier.py  
 
+## Prediction
+python src/ct_pipeline/predict_ct.py <image_path>
+
+Outputs:
+- Saved prediction image
+- JSON result file
+
+## Morphology Analysis
+python src/ct_pipeline/morphology_analysis.py <slice_name>
+
+Outputs:
+- Liver area (pixels)
+- Tumor area (pixels)
+- Tumor-to-liver ratio
+- Tumor dimensions (bounding box)
+
 ## Outputs
 - Accuracy and loss plots (PNG)
 - Confusion matrix
 - Classification report
 - Saved trained model
+- Prediction images and JSON files
+- Morphology analysis results
 
 ## Notes
-- Raw dataset is not included due to size (~26GB)
-- This is a baseline CT classification pipeline
-- Future versions will include prediction and morphology analysis
+- Raw dataset (~26GB) is not included
+- This version extends the baseline CT classifier with prediction and morphology analysis
