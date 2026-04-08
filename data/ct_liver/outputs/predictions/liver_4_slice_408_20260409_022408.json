@@ -1,0 +1,19 @@
+{
+    "fatty": {
+        "result": "Uncertain",
+        "type": "Non-NAFLD",
+        "confidence": 55.11
+    },
+    "ct": {
+        "result": "Abnormality Detected",
+        "type": "Tumor",
+        "confidence": 81.05
+    },
+    "morphology": {
+        "tumor_area": 854,
+        "liver_area": 717,
+        "ratio": 1.191074,
+        "size_px": "50x31"
+    },
+    "final": "Tumor Detected"
+}
