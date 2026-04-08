@@ -1,0 +1,14 @@
+{
+    "fatty": {
+        "result": "No Fatty Liver Detected",
+        "type": "Non-NAFLD",
+        "confidence": 91.79
+    },
+    "ct": {
+        "result": "No Major Abnormality",
+        "type": "Normal",
+        "confidence": 83.97
+    },
+    "morphology": null,
+    "final": "No Major Abnormality Detected"
+}
