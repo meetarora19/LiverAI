@@ -1,0 +1,10 @@
+{
+    "image": "D:\\LiverAI_Project\\data\\ct_liver\\processed\\splits\\test\\Tumor\\liver_4_slice_408.png",
+    "result": "Abnormality Detected",
+    "predicted_type": "Tumor",
+    "confidence": 81.05,
+    "raw_probabilities": [
+        0.18945787847042084,
+        0.8105421662330627
+    ]
+}
