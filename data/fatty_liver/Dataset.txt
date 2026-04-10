@@ -1,0 +1,2 @@
+Use directly in fatty liver model:
+https://www.kaggle.com/datasets/mahendarbyra/behsof-dataset
